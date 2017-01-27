@@ -99,7 +99,7 @@ p2b <- ggplot(training.subSetTrain, aes(classe, magnet_arm_x)) +
 multiplot(p1a,p2b,cols=2)
 ```
 <!-- Figure1 -->
-#png("figure1.png", width=480, height=480) 
+<h1><img src="https://github.com/EJD2016/PracticalMachineLearning/blob/master/Figure1.png" height="480" width="480"></h1>
 
 
 #Model Evaluation
@@ -114,7 +114,7 @@ excludeColumns <- c(highlyCorrelated, classeIndex)
 corrplot(correlationMatrix, method="color", type="lower", order="hclust", tl.cex=0.70, tl.col="black", tl.srt = 45, diag = FALSE)
 ```
 <!-- Figure 2 -->
-#png("figure2.png", width=480, height=480) 
+<h1><img src="https://github.com/EJD2016/PracticalMachineLearning/blob/master/Figure2.png" height="480" width="480"></h1>
 
 Some of the attributes show a good correlation with each other.  There will be a few models examined.
 We will have a model with these excluded. In addition, try and reduce the features by executing PCA on all 
@@ -380,7 +380,7 @@ the rfMod.cleaned model.  The rfMod.exclude model seems to be the best model to 
 The rfMod.exclude model possess an accuracy of 98.7% and an error rate of 0.23%.
 
 <!-- Figure3 -->
-#png("figure3.png", width=480, height=480) 
+<h1><img src="https://github.com/EJD2016/PracticalMachineLearning/blob/master/Figure3.png" height="480" width="480"></h1>
 
 ```r
 par(mfrow=c(1,2)) 
@@ -406,7 +406,7 @@ legend("bottomleft", legend=unique(rfMod.pam$clustering), pch=seq(15,14+length(c
   legend("topleft", legend=classeLevels, pch = 16, col=palette, title = "Classification")
 ```
 <!-- Figure4 -->
-#png("figure4.png", width=480, height=480)
+<h1><img src="https://github.com/EJD2016/PracticalMachineLearning/blob/master/Figure4.png" height="480" width="480"></h1>
 
 ```r
 proc.time() - start
