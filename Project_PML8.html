@@ -182,7 +182,7 @@ multiplot(p1a,p2b,cols=2)</code></pre>
 <!-- Figure1 -->
 </div>
 <div id="figure1.png-width480-height480" class="section level1">
-<h1><img src=".\figure1.png" height="480" width="480"></h1></h1>
+<h1><img src="https://github.com/EJD2016/PracticalMachineLearning/blob/master/Figure1.png" height="480" width="480"></h1></h1>
 </div>
 <div id="model-evaluation" class="section level1">
 <h1>Model Evaluation</h1>
@@ -195,7 +195,7 @@ corrplot(correlationMatrix, method=&quot;color&quot;, type=&quot;lower&quot;, or
 <!-- Figure 2 -->
 </div>
 <div id="figure2.png-width480-height480" class="section level1">
-<h1><img src=".\figure2.png" height="480" width="480"></h1>
+<h1><img src="https://github.com/EJD2016/PracticalMachineLearning/blob/master/Figure2.png" height="480" width="480"></h1>
 <p>Some of the attributes show a good correlation with each other. There will be a few models examined. We will have a model with these excluded. In addition, try and reduce the features by executing PCA on all and the excluded subset of the features.</p>
 <pre class="r"><code>pcaPreProcess.all &lt;- preProcess(training.subSetTrain[, -classeIndex], method = &quot;pca&quot;, thresh = 0.99)
 training.subSetTrain.pca.all &lt;- predict(pcaPreProcess.all, training.subSetTrain[, -classeIndex])
@@ -394,7 +394,7 @@ paste0(&quot;Accuracy on testing: &quot;,rfMod.pca.subset.testing.acc)</code></p
 <!-- Figure3 -->
 </div>
 <div id="figure3.png-width480-height480" class="section level1">
-<h1><img src=".\figure3.png" height="480" width="480"></h1>
+<h1><img src="https://github.com/EJD2016/PracticalMachineLearning/blob/master/Figure3.png" height="480" width="480"></h1>
 <pre class="r"><code>par(mfrow=c(1,2)) 
 varImpPlot(rfMod.exclude, cex=0.7, pch=16, main='Variable Importance Plot: rfMod.exclude')
 plot(rfMod.exclude, , cex=0.7, main='Error vs No. of trees plot')
@@ -416,7 +416,7 @@ legend(&quot;bottomleft&quot;, legend=unique(rfMod.pam$clustering), pch=seq(15,1
 <!-- Figure4 -->
 </div>
 <div id="figure4.png-width480-height480" class="section level1">
-<h1><img src=".\figure4.png" height="480" width="480"></h1>
+<h1><img src="https://github.com/EJD2016/PracticalMachineLearning/blob/master/Figure4.png" height="480" width="480"></h1>
 <pre class="r"><code>proc.time() - start
       user   system  elapsed 
  4524.813    39.624 4588.622</code></pre>
